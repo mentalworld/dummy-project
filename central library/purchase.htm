@@ -1,0 +1,21 @@
+<html>
+<body>
+</style>
+</head>
+<body bgcolor="#084">
+<% 
+	if request.Form("select")<>"" then
+		Response.Redirect(Request.Form("select"))
+	end if
+%>
+<Form action="books.asp" method="post">
+<marquee align="top" behavior="slide" direction="right"><h1>BOOKS</h1></marquee>
+<table align="center" height="500px" width="500px">
+<h1>BOOKS OF DIFFERENT DEPARTMENT</h1>
+<a href="books of eng.asp"><h2>Books of engineering</h2></a>
+<a href="books of buisness.asp"><h2>Books of business</h2></a>
+<a href="books of law.asp"><h2>Books of law</h2></a>
+<a href="books of designing.asp"><h2>Books of designing</h2></a>
+<a href=home.htm>Back</a>
+</body>
+</html>
